@@ -5,3 +5,4 @@ target
 .idea
 mvcDemo.iml
 .gitignore
+.DS_Store
