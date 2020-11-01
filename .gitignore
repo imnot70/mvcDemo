@@ -1,7 +1,11 @@
-
+.settings
 .gitattributes
 .idea/uiDesigner.xml
 target
 .idea
 mvcDemo.iml
+.gitignore
+.project
+*.iml
+.classpath
 .gitignore
