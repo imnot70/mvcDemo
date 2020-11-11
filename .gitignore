@@ -9,3 +9,4 @@ mvcDemo.iml
 *.iml
 .classpath
 .gitignore
+.DS_Store
