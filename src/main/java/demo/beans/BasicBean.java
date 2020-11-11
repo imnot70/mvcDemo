@@ -1,7 +1,10 @@
 package demo.beans;
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 
+@Component("basicBean")
 public class BasicBean implements Serializable {
 
     private Integer id;

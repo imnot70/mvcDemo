@@ -1,7 +1,10 @@
 package demo.beans;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
+@Component("user")
 public class User extends BasicBean{
     private String name;
     private int age;
@@ -21,6 +24,9 @@ public class User extends BasicBean{
     private String Indate;
     private Integer IsDelete;
     private List<Role> RoleList;
+
+    public User() {
+    }
 
     public User(String name, int age, double salary) {
         this.name = name;
