@@ -1,4 +1,4 @@
-package demo.Utils;
+package demo.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import demo.beans.ProjectDataVO;

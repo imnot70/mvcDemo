@@ -1,6 +1,6 @@
 package demo.lambda;
 
-import demo.Utils.JSONUtil;
+import demo.utils.JSONUtil;
 import demo.beans.User;
 import org.junit.Test;
 

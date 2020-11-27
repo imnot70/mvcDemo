@@ -1,9 +1,9 @@
 package demo.lambda;
 
 import com.alibaba.fastjson.JSONObject;
-import demo.Utils.EmailUtils;
-import demo.Utils.JSONUtil;
-import demo.Utils.RandomIdUtil;
+import demo.utils.EmailUtils;
+import demo.utils.JSONUtil;
+import demo.utils.RandomIdUtil;
 import demo.beans.BasicBean;
 import org.junit.After;
 import org.junit.Before;
