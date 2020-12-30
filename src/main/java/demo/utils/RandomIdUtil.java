@@ -1,4 +1,4 @@
-package demo.Utils;
+package demo.utils;
 
 import demo.beans.BasicBean;
 
