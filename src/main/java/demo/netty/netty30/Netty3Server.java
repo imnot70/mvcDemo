@@ -1,4 +1,4 @@
-package demo.io.netty3;
+package demo.netty.netty30;
 
 import demo.constants.Constants;
 import org.jboss.netty.bootstrap.ServerBootstrap;
