@@ -1,5 +1,8 @@
-package demo.thread;
+package demo.thread.old;
 
+/**
+ * @author imnot
+ */
 public class AddThread implements Runnable{
 
 

@@ -2,6 +2,9 @@ package demo.beans;
 
 import java.util.List;
 
+/**
+ * @author imnot
+ */
 public class ProjectVO {
     private List<Project> project_basic_list;
 

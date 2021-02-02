@@ -1,5 +1,8 @@
 package demo.reflect;
 
+/**
+ * @author imnot
+ */
 public class Test {
     public static void main(String[] args) {
         Class<InterfaceDemo> clazz1 = InterfaceDemo.class;

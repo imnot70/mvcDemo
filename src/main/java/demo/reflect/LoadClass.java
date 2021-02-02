@@ -1,14 +1,15 @@
 package demo.reflect;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.*;
 import java.util.Enumeration;
 
+/**
+ * @author imnot
+ */
 public class LoadClass {
     private static final String URL = "jdbc:mysql://localhost:3306/mybatis";
     private static final String USER_NAME = "root";
@@ -17,8 +18,8 @@ public class LoadClass {
 
     public static void main(String[] args) throws Exception {
         LoadClass loadClass = new LoadClass();
-//        loadClass.loadClass("mvc.controller");
-        loadClass.testPreparedStatement();
+        loadClass.loadClass("demo.aop");
+//        loadClass.testPreparedStatement();
     }
 
     public void testPreparedStatement() throws ClassNotFoundException, SQLException {

@@ -7,6 +7,9 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * @author imnot
+ */
 public class HttpUtil {
 
     private static final int TIMEOUT_IN_MILLIONS = 5000;

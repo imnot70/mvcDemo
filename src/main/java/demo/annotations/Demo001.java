@@ -3,6 +3,9 @@ package demo.annotations;
 
 import org.junit.Test;
 
+/**
+ * @author imnot
+ */
 public class Demo001 {
 
     @Test

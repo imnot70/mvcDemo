@@ -1,10 +1,10 @@
 package demo.lambda;
 
 import com.alibaba.fastjson.JSONObject;
-import demo.utils.EmailUtils;
-import demo.utils.JSONUtil;
-import demo.utils.RandomIdUtil;
 import demo.beans.BasicBean;
+import demo.utils.EmailUtils;
+import demo.utils.JsonUtil;
+import demo.utils.RandomIdUtil;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +13,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author imnot
+ */
 public class LambdaDemo001 {
 
     private List<BasicBean> idList = null;
@@ -20,14 +23,14 @@ public class LambdaDemo001 {
     @Before
     public void prepared(){
         idList = RandomIdUtil.createRandomIdObjectList(BasicBean.class,10,100);
-        JSONUtil.print(idList);
+        JsonUtil.fastJsonPrint(idList);
         System.out.println("============================");
     }
 
     @After
     public void finished(){
         System.out.println("============================");
-        JSONUtil.print(idList);
+        JsonUtil.fastJsonPrint(idList);
     }
 
     @Test
@@ -47,9 +50,9 @@ public class LambdaDemo001 {
     @Test
     public void test002(){
 
-        JSONUtil.print(idList);
+        JsonUtil.fastJsonPrint(idList);
         idList = idList.parallelStream().sorted(Comparator.comparing(BasicBean::getId)).collect(Collectors.toList());
-        JSONUtil.print(idList);
+        JsonUtil.fastJsonPrint(idList);
 
     }
 

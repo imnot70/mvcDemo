@@ -1,6 +1,9 @@
 package demo.beans;
 
-class Role{
+/**
+ * @author imnot
+ */
+public class Role{
     private Integer Roleid;
     private String Name;
     private String Show_Name;

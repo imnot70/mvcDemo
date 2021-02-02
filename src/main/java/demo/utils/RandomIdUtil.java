@@ -8,6 +8,7 @@ import java.util.Random;
 
 /**
  * create Object with random id
+ * @author imnot
  */
 public class RandomIdUtil {
 

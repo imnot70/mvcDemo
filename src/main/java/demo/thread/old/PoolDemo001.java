@@ -1,9 +1,12 @@
-package demo.thread;
+package demo.thread.old;
 
 import org.junit.Test;
 
 import java.util.concurrent.*;
 
+/**
+ * @author imnot
+ */
 public class PoolDemo001 {
 
     private int corePoolSize = 2;

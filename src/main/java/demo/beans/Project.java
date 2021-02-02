@@ -1,5 +1,8 @@
 package demo.beans;
 
+/**
+ * @author imnot
+ */
 public class Project {
 
     private String project_name;

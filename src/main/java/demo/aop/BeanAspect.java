@@ -6,6 +6,9 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author imnot
+ */
 @Aspect
 @Component
 public class BeanAspect {

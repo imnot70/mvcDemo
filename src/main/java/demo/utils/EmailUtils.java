@@ -2,14 +2,16 @@ package demo.utils;
 
 import demo.constants.Constants;
 
-import java.util.Date;
-import java.util.Properties;
-
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.Date;
+import java.util.Properties;
 
+/**
+ * @author imnot
+ */
 public class EmailUtils {
 
 	// 发件人的 邮箱 和 密码（替换为自己的邮箱和密码）

@@ -1,7 +1,10 @@
-package demo.thread;
+package demo.thread.old;
 
 import demo.beans.User;
 
+/**
+ * @author imnot
+ */
 public class TreadLocalTest {
     public static void main(String[] args) {
         User userA = new User().setName("A");

@@ -1,33 +1,26 @@
 package demo.thread;
 
-import org.junit.Test;
+import demo.thread.thread.CallableDemo;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
 
 public class Demo001 {
-
-    public static void main(String[] args) {
-        List<String> strs = new ArrayList<String>(Arrays.asList("1","2","3","4","5","6","7","8"));
-
-        List<String> strs1 = strs.subList(0,4);
-        List<String> strs2 = strs.subList(4,8);
-
-        System.out.println(strs1);
-        System.out.println(strs2);
-
-        Thread t1 = new TestThread(strs1);
-        Thread t2 = new TestThread(strs2);
-
-        t1.start();
-        t2.start();
-    }
-
-
-    @Test
-    public void test01(){
-
-    }
-
+	public static void main(String[] args) {
+//		Thread t1 = new CustomThread01();
+//		t1.start();
+		
+		FutureTask<Integer> futureTask = new FutureTask<Integer>(new CallableDemo());
+		Thread thread = new Thread(futureTask);
+		thread.start();
+		try {
+			Integer sumInteger = futureTask.get();
+			System.out.println("sum:"+sumInteger);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+		
+	}
 }

@@ -1,5 +1,8 @@
-package demo.thread;
+package demo.thread.old;
 
+/**
+ * @author imnot
+ */
 public class PoolThread extends Thread {
 
     public PoolThread() {

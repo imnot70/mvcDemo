@@ -1,5 +1,8 @@
 package demo.beans;
 
+/**
+ * @author imnot
+ */
 public class ProjectDataVO {
     private ProjectVO data;
     private String code;

@@ -1,7 +1,7 @@
 package demo.lambda;
 
-import demo.utils.JSONUtil;
 import demo.beans.User;
+import demo.utils.JsonUtil;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * @author imnot
+ */
 public class LambdaDemo002 {
 
     @Test
@@ -17,7 +20,7 @@ public class LambdaDemo002 {
 //        stream.forEach(System.out::println);
 
         List<String> list = (List<String>) stream.distinct().collect(Collectors.toList());
-        JSONUtil.print(list);
+        JsonUtil.fastJsonPrint(list);
 
     }
 
@@ -30,10 +33,10 @@ public class LambdaDemo002 {
         users.add(user);
         User user1 = new User("B",11,6000.0);
         users.add(user1);
-        JSONUtil.print(users);
+        JsonUtil.fastJsonPrint(users);
 
         users = users.parallelStream().distinct().collect(Collectors.toList());
-        JSONUtil.print(users);
+        JsonUtil.fastJsonPrint(users);
     }
 
     @Test

@@ -4,6 +4,9 @@ import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
+/**
+ * @author imnot
+ */
 @Component("basicBean")
 public class BasicBean implements Serializable {
 

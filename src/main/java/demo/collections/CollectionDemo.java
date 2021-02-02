@@ -3,10 +3,12 @@ package demo.collections;
 import org.junit.Test;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
+/**
+ * @author imnot
+ */
 public class CollectionDemo {
 
     @Test

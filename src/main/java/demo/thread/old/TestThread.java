@@ -1,7 +1,10 @@
-package demo.thread;
+package demo.thread.old;
 
 import java.util.List;
 
+/**
+ * @author imnot
+ */
 public class TestThread extends Thread {
 
     private List<String> strs;
