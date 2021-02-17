@@ -55,7 +55,10 @@ public class DiscardServer {
             System.out.println("channelRead method,msg:");
             try{
                 while(byteBuf.isReadable()){
-                    System.out.println(byteBuf.toString(CharsetUtil.US_ASCII));
+                    String result = byteBuf.toString(CharsetUtil.US_ASCII);
+                    System.out.println(result);
+                    ChannelFuture future = ctx.writeAndFlush(result);
+                    future.addListener((ChannelFutureListener) future1 -> ctx.close());
                 }
             }finally {
                 // 丢弃消息
