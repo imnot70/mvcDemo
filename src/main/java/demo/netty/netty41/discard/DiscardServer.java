@@ -17,6 +17,8 @@ public class DiscardServer {
 
     public static void main(String[] args) throws Exception {
         discardServer();
+
+        String string = "zhangsan";
     }
 
     public static void discardServer() throws InterruptedException {
