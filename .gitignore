@@ -10,3 +10,4 @@ mvcDemo.iml
 .classpath
 .gitignore
 .DS_Store
+logs/
