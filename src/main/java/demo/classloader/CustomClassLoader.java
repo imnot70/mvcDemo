@@ -3,10 +3,10 @@ package demo.classloader;
 /**
  * @author imnot
  */
-public class CustomClassLoader<T> extends ClassLoader{
+public class CustomClassLoader extends ClassLoader{
     @Override
-    public Class<T> loadClass(String name) throws ClassNotFoundException {
+    public Class<?> loadClass(String name) throws ClassNotFoundException {
         System.out.println("loadClass,name:"+name);
-        return (Class<T>) super.loadClass(name);
+        return super.loadClass(name);
     }
 }
