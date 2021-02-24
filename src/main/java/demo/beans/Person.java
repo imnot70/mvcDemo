@@ -6,6 +6,7 @@ package demo.beans;
 public class Person {
 	
 	public Person() {
+		System.out.println("Person Constructor");
 	}
 	
 	public Person(String name) {
