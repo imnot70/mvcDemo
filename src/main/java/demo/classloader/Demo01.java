@@ -25,7 +25,7 @@ public class Demo01 {
         String instance = str.newInstance();
         System.out.println(instance);
         */
-        
+
         InnerLoader1 loader1 = new InnerLoader1();
         InnerLoader2 loader2 = new InnerLoader2();
         Class<?> loadClass1 = loader1.loadClass(className);
